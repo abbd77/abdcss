@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوق العراق المفتوح</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* الشريط العلوي */
+        .top-bar {
+            background-color: #f8f8f8;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .top-bar button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .top-bar-icons {
+            display: flex;
+            align-items: center;
+        }
+        .top-bar-icons img {
+            width: 25px;
+            height: 25px;
+            margin: 0 10px;
+        }
+
+        /* شريط البحث */
+        .search-bar {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-bar select, .search-bar input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .search-bar input {
+            width: 70%;
+        }
+
+        /* إعلانات العرض */
+        .ads-banner {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .ads-banner img {
+            width: 95%;
+            border-radius: 10px;
+        }
+
+        /* الفئات */
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 0 20px;
+        }
+        .category {
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        .category img {
+            width: 50px;
+            height: 50px;
+        }
+        .category p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
+
+        /* زر شاهد المزيد */
+        .show-more {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .show-more button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* تصميم متجاوب */
+        @media (max-width: 768px) {
+            .categories {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <div class="top-bar">
+        <button>أضف إعلانك الآن</button>
+        <div class="top-bar-icons">
+            <img src="message_icon.png" alt="الرسائل">
+            <img src="notification_icon.png" alt="الإشعارات">
+        </div>
+    </div>
+
+    <!-- شريط البحث -->
+    <div class="search-bar">
+        <select>
+            <option>العراق - كل المدن</option>
+        </select>
+        <input type="text" placeholder="ابحث في السوق المفتوح...">
+    </div>
+
+    <!-- إعلانات العرض -->
+    <div class="ads-banner">
+        <img src="ads_image.jpg" alt="إعلان">
+    </div>
+
+    <!-- الفئات -->
+    <div class="categories">
+        <div class="category">
+            <img src="Download/to/7.jpg" alt="عقارات للإيجار">
+            <p>عقارات للإيجار</p>
+        </div>
+        <div class="category">
+            <img src="category2.png" alt="عقارات للبيع">
+            <p>عقارات للبيع</p>
+        </div>
+        <div class="category">
+            <img src="category3.png" alt="متاجر">
+            <p>متاجر</p>
+        </div>
+        <div class="category">
+            <img src="<img src="https://drive.google.com/uc?export=view&id=1-BAL1QcnoF1tYXZ-Nvl7IMjBpctImd_P" alt="دراجات نارية">
+            <p>دراجات نارية</p>
+        </div>
+        <div class="category">
+            <img src="category5.png" alt="سيارات">
+            <p>مركبات</p>
+        </div>
+        <div class="category">
+           <img src="https://drive.google.com/uc?export=view&id=1-BAL1QcnoF1tYXZ-Nvl7IMjBpctImd_P" alt="وصف الصورة">
+            <p>الخدمات</p>
+        </div>
+        <div class="category">
+            <img src="category7.png" alt="ملابس رجالية">
+            <p>أزياء رجالي</p>
+        </div>
+        <div class="category">
+            <img src="category8.png" alt="أطفال وألعاب">
+            <p>أطفال وألعاب</p>
+        </div>
+    </div>
+
+    <!-- زر شاهد المزيد -->
+    <div class="show-more">
+        <button>شاهد المزيد</button>
+    </div>
+
+</body>
+</html>
